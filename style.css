@@ -1,0 +1,215 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  body {
+    line-height: 1.6;
+    color: #ff8b48;
+    padding-top: 20px; /* Add padding equal to the navbar height */
+  }
+  /* Header */
+  .header {
+    background:  linear-gradient(to bottom, rgba(255, 197, 197, 0) 0%, rgb(255, 197, 197, 1) 100%), url("pexels-olly-853151.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    text-align: center;
+}
+  
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity if needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+  
+  .header h1 {
+    text-shadow: 
+  4px 4px 0 rgba(122, 1, 1, 0.7),   
+  -4px -4px 0 rgba(122, 1, 1, 0.7), 
+  4px -4px 0 rgba(122, 1, 1, 0.7), 
+  -4px 4px 0 rgba(122, 1, 1, 0.7);  
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .header button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    color: #ffa7a7;
+    background-color: #f87a31;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fcfcfc;
+  }
+  
+  .services h2 {
+    color:#fa994a ;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 2rem;
+    background: #ffffff;
+    color: #fa994a;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  /* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff8b48;
+    padding: 10px 20px;
+    color: #fff;
+    position: fixed; /* Make it fixed at the top */
+    top: 0;          /* Align to the top */
+    left: 0;         /* Stretch from the left */
+    right: 0;        /* Stretch to the right */
+    z-index: 1000;   /* Ensure it stays above other elements */
+  }
+  
+  /* To prevent the content below the navbar from being hidden */
+
+  
+  .navbar .logo {
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%); 
+    height: 40px; 
+}
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #ca1609;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      display: none; /* Hide navigation links by default */
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      background: #333;
+      border: 1px solid #444;
+      padding: 10px;
+    }
+  
+    .nav-links.show {
+      display: flex; /* Show links when toggled */
+    }
+  
+    .toggle-button {
+      cursor: pointer;
+      display: inline-block;
+      color: #fff;
+      font-size: 1.5rem;
+      padding: 5px;
+      margin-left: auto;
+    }
+  }
+  .MeetTheTeam {
+    align-content: center;
+    text-align: center;
+    padding: 2rem;
+    text-align: center;
+    background-color: #fffae1;
+  }
+  
+  .meetTheTeam h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
